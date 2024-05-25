@@ -1,13 +1,9 @@
 {
   "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "lib",
+    "rootDir": ".",
     "paths": {
       "react-native-video": ["./src/index"]
     },
-    "composite": true,
-    "declaration": true,
-    "sourceMap": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,
@@ -28,6 +24,5 @@
     "strict": true,
     "target": "esnext",
     "verbatimModuleSyntax": true
-  },
-  "exclude": ["examples", "lib", "docs"]
+  }
 }
