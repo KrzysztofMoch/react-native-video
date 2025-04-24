@@ -1,6 +1,3 @@
-# react-native-video  
-*A modern, community-driven video component for React Native*
-
 <a href="https://www.thewidlarzgroup.com/?utm_source=rnv&utm_medium=readme&utm_campaign=enterprise&utm_id=banner">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./docs/assets/baners/twg-dark.png" />
@@ -9,125 +6,62 @@
   </picture>
 </a>
 
-[![npm](https://img.shields.io/npm/v/react-native-video?label=npm&logo=npm)](https://www.npmjs.com/package/react-native-video)
-[![CI](https://img.shields.io/github/actions/workflow/status/TheWidlarzGroup/react-native-video/ci.yml?label=CI)](https://github.com/TheWidlarzGroup/react-native-video/actions)
-[![Discord](https://img.shields.io/discord/932583855555648562?label=Discord&logo=discord)](https://discord.gg/9WPq6Yx)
-[![Twitter Follow](https://img.shields.io/twitter/follow/TheWidlarzGroup?style=social)](https://twitter.com/TheWidlarzGroup)
+A flexible `<Video />` component for React Native — with support for streaming, offline playback, DRM, and platform-native performance.
 
----
+[📚 Docs](https://docs.thewidlarzgroup.com/react-native-video) | [💬 Join Discord](https://discord.gg/WXuM4Tgb9X)
 
-## ✨ Project status & roadmap
+## 🔍 What's inside
 
-| Version | State | Notes |
-|---------|-------|-------|
-| **v5 and lower** | ❌ *EOL* | No new development. Commercial **maintenance & support** available. |
-| **v6** | 🛠 *Maintenance* | Community-driven. Accepting PRs. Commercial budget funds ongoing work. |
-| **v7** | 🚀 *In active development* | Public release **soon™**. Become a **sponsor** to get early access & influence roadmap. |
+- ▶️ **Local and remote video playback**
+- 🔁 **Stream support:** HLS, DASH, SmoothStreaming
+- 🔐 **DRM:** Widevine & FairPlay (via optional modules)
+- 📴 **Offline playback** (via optional SDK)
+- 🎚️ **Control over audio/subtitle tracks, buffers, and events**
+- 🧩 **Expo plugin support**
 
-> **react-native-video** is a **community-based project** lovingly maintained by **[The Widlarz Group (TWG)](https://thewidlarzgroup.com)** — experts in React Native apps.  
-> Your sponsorship accelerates fixes, features, and the next major release. ❤️
+## 📦 Examples
 
----
+See working implementations of common use cases:
 
-## �� Why choose *react-native-video*
+- [Basic example](https://github.com/TheWidlarzGroup/react-native-video/blob/master/examples/common/BasicExample.tsx)
+- [DRM example](https://github.com/TheWidlarzGroup/react-native-video/blob/master/examples/common/DRMExample.tsx)
 
-- �� **Feature-rich** — HLS/DASH, DRM, PiP, adaptive bitrate, subtitles, analytics hooks and more.  
-- �� **iOS • Android • tvOS • Windows** — one API, all platforms.  
-- ⚡️ **Performant** — hardware decoding wherever possible, configurable buffering.  
-- �� **Composable** — headless & render-prop flavours, fits every design system.  
-- �� **Battle-tested** — used by thousands of apps, from scrappy MVPs to Fortune 500.
+These include basic props, handling errors, and secure streaming.
 
----
+## 🧩 Optional Modules
 
-## �� Quick start
+Our ecosystem includes standalone packages you can use with this player for advanced functionality.
 
-```bash
-# 1 Install
-yarn add react-native-video
-# 2 Link native deps (RN < 0.60) or autolink (RN ≥ 0.60)
-cd ios && pod install
-# 3 Use it!
-```
+### 1. 📥 Offline SDK
+Enable offline streaming with full control over downloads, license lifecycle, secure storage, and media access.
+- Track selection (bitrate, audio, subtitles)
+- Pause/resume & background queueing
+- Expiration windows & auto-cleanup
+- Built for Android & iOS
+- [→ SDK documentation](#)
 
-```tsx
-import Video from 'react-native-video';
+### 2. 🧪 Plugin Architecture *(Experimental)*
+Write your own plugins to extend download logic, attach analytics, or add custom workflows — without forking the core SDK.
 
-export default () => (
-  <Video
-    source={{ uri: 'https://www.w3schools.com/html/mov_bbb.mp4' }}
-    style={{ width: '100%', aspectRatio: 16 / 9 }}
-    controls
-  />
-);
-```
+## 💼 Commercial Services
+We support production teams with:
+- 🛠️ Integration support
+- 🧩 Plugin architecture guidance
+- 🔍 Code audits for offline/DRM/video workflows
 
-<details>
-<summary>📚 **Full docs & examples**</summary>
+We're open-source by default, but available when needed.
+[Contact us](#)
 
-- Installation  
-- API reference  
-- Events  
-- Adaptive streaming  
-- DRM (Widevine / FairPlay)  
-- Subtitles  
-- Buffering strategies  
-- Custom UI  
-- Troubleshooting  
+## 📌 Roadmap Highlights
+- Secure DRM license management
+- Offline download support
+- Asset manager module
+- Pluggable architecture for custom extensions
+- Advanced storage control
+- Offline analytics (planned)
 
-</details>
+Feature development is based on real-world needs. Got feedback? [Start a discussion](#)
 
----
-
-## �� Roadmap
-
-| Milestone | Status |
-|-----------|--------|
-| Re-architecture to **TurboModules & JSI** | ✅ done in v7 |
-| **Offline Video SDK** integration | 🚧 ongoing |
-| React Native 0.74 compatibility | ✅ |
-| Expo config plugin | 🔜 |
-| tvOS redesign | 🔜 |
-
----
-
-## �� Commercial add-ons & services
-
-| Product / Service | What you get | How it helps |
-|-------------------|--------------|--------------|
-| **Issue Booster** | Pay-per-issue prioritisation | Jump the queue, fix blockers fast |
-| **Offline Video SDK** <br>_Secure downloads, DRM, asset control_ | DASH & HLS, Widevine/FairPlay, queuing, pause/resume, metadata, expiry | Netflix-grade offline playback in days, not months |
-| **Custom development** | Team of senior RN engineers | Features, audits, migrations, performance |
-
-✉️ **Need something special?** Reach out at *contact @thewidlarzgroup.com*
-
----
-
-## �� Community & media
-
-- �� **RN Video Friday** — weekly newsletter by [@Sebastiandotdev](https://x.com/Sebastiandotdev)  
-- �� **React Native NYC** — monthly meetup (talks & demos)  
-- �� **Nitro Module v7 deep-dive** — upcoming livestream, stay tuned!  
-
----
-
-## �� Social & community
-
-| Platform | Link |
-|----------|------|
-| 🐦 X / Twitter | <https://x.com/TheWidlarzGroup> |
-| 💼 LinkedIn | <https://linkedin.com/company/the-widlarz-group> |
-| 💬 Discord | <https://discord.gg/9WPq6Yx> |
-| 🌐 Web | <https://thewidlarzgroup.com> |
-
----
-
-## ✍️ Contributing
-
-PRs welcome! Please read the **[contributing guide](CONTRIBUTING.md)** first.  
-For larger features, open a discussion / issue to align on direction.
-
----
-
-## �� License
-
-[MIT](LICENSE) © The Widlarz Group & community contributors
+## 🧠 More Resources
+- [Full documentation](https://docs.thewidlarzgroup.com/react-native-video)
+- [Free DRM token generator](https://www.thewidlarzgroup.com/services/free-drm-token-generator-for-video?utm_source=rnv&utm_medium=readme&utm_campaign=drm&utm_id=free-drm)
