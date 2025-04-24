@@ -23,7 +23,7 @@
 
 ---
 
-## �� Why choose *react-native-video*
+## 🔥 Why choose *react-native-video*
 
 - �� **Feature-rich** — HLS/DASH, DRM, PiP, adaptive bitrate, subtitles, analytics hooks and more.  
 - �� **iOS • Android • tvOS • Windows** — one API, all platforms.  
@@ -33,7 +33,7 @@
 
 ---
 
-## �� Quick start
+## 🚀 Quick start
 
 ```bash
 # 1 Install
@@ -72,7 +72,7 @@ export default () => (
 
 ---
 
-## �� Roadmap
+## 🏗️ Roadmap
 
 | Milestone | Status |
 |-----------|--------|
@@ -84,7 +84,7 @@ export default () => (
 
 ---
 
-## �� Commercial add-ons & services
+## 💼 Commercial add-ons & services
 
 | Product / Service | What you get | How it helps |
 |-------------------|--------------|--------------|
@@ -96,15 +96,15 @@ export default () => (
 
 ---
 
-## �� Community & media
+## 💬 Community & media
 
-- �� **RN Video Friday** — weekly newsletter by [@Sebastiandotdev](https://x.com/Sebastiandotdev)  
-- �� **React Native NYC** — monthly meetup (talks & demos)  
-- �� **Nitro Module v7 deep-dive** — upcoming livestream, stay tuned!  
+- 📫 **RN Video Friday** — weekly newsletter by [@Sebastiandotdev](https://x.com/Sebastiandotdev)  
+- 🗽 **React Native NYC** — monthly meetup (talks & demos)  
+- 🧨 **Nitro Module v7 deep-dive** — upcoming livestream, stay tuned!  
 
 ---
 
-## �� Social & community
+## 🌐 Social & community
 
 | Platform | Link |
 |----------|------|
@@ -122,6 +122,6 @@ For larger features, open a discussion / issue to align on direction.
 
 ---
 
-## �� License
+## 📝 License
 
 [MIT](LICENSE) © The Widlarz Group & community contributors
