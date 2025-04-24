@@ -1,7 +1,13 @@
 # react-native-video  
 *A modern, community-driven video component for React Native*
 
-![react-native-video header](https://raw.githubusercontent.com/TheWidlarzGroup/react-native-video/master/.github/header.svg)
+<a href="https://www.thewidlarzgroup.com/?utm_source=rnv&utm_medium=readme&utm_campaign=enterprise&utm_id=banner">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./docs/assets/baners/twg-dark.png" />
+    <source media="(prefers-color-scheme: light)" srcset="./docs/assets/baners/twg-light.png" />
+    <img alt="TheWidlarzGroup" src="./docs/assets/baners/twg-light.png" />
+  </picture>
+</a>
 
 [![npm](https://img.shields.io/npm/v/react-native-video?label=npm&logo=npm)](https://www.npmjs.com/package/react-native-video)
 [![CI](https://img.shields.io/github/actions/workflow/status/TheWidlarzGroup/react-native-video/ci.yml?label=CI)](https://github.com/TheWidlarzGroup/react-native-video/actions)
